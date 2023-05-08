@@ -1,4 +1,4 @@
-/* Quickly jump to edit page for current article (Swarm & WP Posts) */
+/* Quickly jump to the edit page for the current article (Swarm & WP Posts) */
 (() => {
     if (_WF.cache.getItem(_WF.KEYS.ISSWARMPOST)) {
         window.open(`https://swarm.hivemedia.com/slideshow/${_WF.cache.getItem(_WF.KEYS.SWARMPOSTID)}`, '_blank').focus();
