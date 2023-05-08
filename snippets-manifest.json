@@ -4,6 +4,7 @@
     "AB-Viewer.js": "Outputs all AB test states on current page",
     "Ad-Overlay.js": "Displays basic advertisement information below ad units",
     "Advanced-Ad-Overlay.dev.js": "Opens an advanced advertisement overlay and console",
+    "Article-Edit.js": "Quickly jump to the edit page for the current article (Swarm & WP Posts)",
     "Bucket-AB-Share.js": "Creates a sharable url that will put users into the same AB Tests currently running on the page set by the AB Portal",
     "Cookie-Location-Changer.dev.js": "Set/Update Location with cookies",
     "Edit-Active-AB-Tests.js": "View and modify which active AB tests run on the current page",
