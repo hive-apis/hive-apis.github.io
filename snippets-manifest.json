@@ -15,6 +15,7 @@
     "Paid-Reset-SPL-Mobile.js": "Clears local storage and puts the user into a paid mobile SPL session",
     "Providers-Viewer.js": "Outputs All Providers on Current Page",
     "Query-String-Editor.js": "Add, remove, or update query string parameters on the current page and trims unnecessary queries",
+    "Quiz-Jumper.js": "Jump between quiz slides while persisting search params",
     "Quiz-Navigator.js": "Navigate through quizzes (start, select answer, next question) while persisting query parameters automatically with a single click",
     "Site-Navigator.js": "Quickly navigate from one site to another by searching for a site's abbreviation or part of it",
     "Toggle-Avantis-Logging.js": "Toggles Avantis debug logging",
