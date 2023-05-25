@@ -12,13 +12,9 @@
         <a href="/"><h1>Hive Apis Docs</h1></a>
         <h2>Snippets</h2>
         <nav>
-            <a href="/">Snippets</a>
-            <a href="./report-a-bug.html">Report a bug</a>
+            <h4><a href="./report-a-bug.html">Report a bug</a></h4>
         </nav>
     </header>
-
-
-
     <script async type="module">
         const manifest = await fetch("snippets-manifest.json"),
             manifestObj = await manifest.json();
@@ -32,7 +28,6 @@
                 span.innerHTML = `${manifestObj[name]}`;
                 li.appendChild(a);
                 li.appendChild(span);
-                //when li is hovered, show the span and remove it when not hovered
                 li.addEventListener("click", () => {
                     span.classList.toggle("show");
                 });
