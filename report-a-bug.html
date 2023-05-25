@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slider.css">
     <title>Hive Apis - Report a Bug</title>
 </head>
 <body>
     <header>
         <a href="/"><h1>Hive Apis Docs</h1></a>
-        <h2>Report a Bug</h2>
         <nav>
-            <h4><a href="/">Snippets</a></h4>
+            <label id="switchPage" class="switch">
+                <input type="checkbox" id="togBtn">
+                <div class="slider right round">
+                    <span class="on"><h2>Snippets</h2></span>
+                    <span class="off"><h2>Report a Bug</h2></span>
+                </div>
+            </label>
         </nav>
     </header>
 
 
-    <script async type="module">
+    <script>
+        document.getElementById("switchPage").addEventListener("click", () => {
+            setTimeout(() => {
+                window.location.href = "/index.html";
+            }, 500);
+        });
     </script>
 </body>
 </html>

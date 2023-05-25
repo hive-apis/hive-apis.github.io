@@ -19,11 +19,12 @@ h1 {
 /* h2 that is similar to h1 above */
 h2 {
     color: white;
-    font-size: 2em;
+    font-size: 1.2em;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
     user-select: none;
     margin-top: 0;
+    padding-top: 6px
 }
 
 /* nav style for two links matching theme */

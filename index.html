@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slider.css">
     <title>Hive Apis - Snippets</title>
 </head>
 <body>
     <header>
         <a href="/"><h1>Hive Apis Docs</h1></a>
-        <h2>Snippets</h2>
         <nav>
-            <h4><a href="./report-a-bug.html">Report a bug</a></h4>
+            <label id="switchPage" class="switch">
+                <input type="checkbox" id="togBtn">
+                <div class="slider round">
+                    <span class="off"><h2>Snippets</h2></span>
+                    <span class="on"><h2>Report a Bug</h2></span>
+                </div>
+            </label>
         </nav>
     </header>
     <script async type="module">
@@ -34,6 +40,12 @@
             manifestNode.appendChild(li);
         });
         document.body.appendChild(manifestNode);
+
+        document.getElementById("switchPage").addEventListener("click", () => {
+            setTimeout(() => {
+                window.location.href = "/report-a-bug.html";
+            }, 500);
+        });
     </script>
 </body>
 </html>
