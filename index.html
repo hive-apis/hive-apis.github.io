@@ -1,1 +1,37 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hive Apis</title>
+</head>
+<body>
+    <h1>Hive Apis Docs</h1>
+
+
+
+    <script async type="module">
+        const manifest = await fetch("snippets-manifest.json"),
+            manifestObj = await manifest.json();
+        const manifestNode = document.createElement("ul");
+
+        Object.keys(manifestObj).forEach((name) => {
+            const li = document.createElement("li"),
+                a = document.createElement("a"),
+                span = document.createElement("span");
+                a.innerHTML = `${name}`;
+                span.innerHTML = `${manifestObj[name]}`;
+                li.appendChild(a);
+                li.appendChild(span);
+                //when li is hovered, show the span and remove it when not hovered
+                li.addEventListener("click", () => {
+                    span.classList.toggle("show");
+                });
+            manifestNode.appendChild(li);
+        });
+        document.body.appendChild(manifestNode);
+    </script>
+</body>
+</html>
