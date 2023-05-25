@@ -21,31 +21,7 @@
             </label>
         </nav>
     </header>
-    <script async type="module">
-        const manifest = await fetch("snippets-manifest.json"),
-            manifestObj = await manifest.json();
-        const manifestNode = document.createElement("ul");
-
-        Object.keys(manifestObj).forEach((name) => {
-            const li = document.createElement("li"),
-                a = document.createElement("a"),
-                span = document.createElement("span");
-                a.innerHTML = `${name}`;
-                span.innerHTML = `${manifestObj[name]}`;
-                li.appendChild(a);
-                li.appendChild(span);
-                li.addEventListener("click", () => {
-                    span.classList.toggle("show");
-                });
-            manifestNode.appendChild(li);
-        });
-        document.body.appendChild(manifestNode);
-
-        document.getElementById("switchPage").addEventListener("click", () => {
-            setTimeout(() => {
-                window.location.href = "/report-a-bug.html";
-            }, 500);
-        });
+    <script src="showSnippets.js" async type="module">
     </script>
 </body>
 </html>
