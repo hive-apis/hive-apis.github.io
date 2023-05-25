@@ -13,6 +13,43 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
     user-select: none;
+    margin-bottom: 0;
+}
+
+/* h2 that is similar to h1 above */
+h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    user-select: none;
+    margin-top: 0;
+}
+
+/* nav style for two links matching theme */
+nav {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: 'Roboto', sans-serif;
+    /*display all items on one line centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    padding-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 0 1em;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    border: 3px solid orange;
 }
 
 ul {
@@ -39,11 +76,12 @@ li:last-child {
     border-bottom: 5px solid orange;
 }
 
-li a {
+a {
     text-decoration: none;
+    color: white;
 }
 
-li:hover {
+li:hover, nav a:hover {
     background-color: rgb(110, 105, 105);
     cursor: pointer;
 }
