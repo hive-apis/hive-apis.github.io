@@ -82,6 +82,10 @@ li:last-child {
     border-bottom: 5px solid orange;
 }
 
+li a.selected{
+    border-bottom:2px solid orange;
+}
+
 a {
     text-decoration: none;
     color: white;

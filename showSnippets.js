@@ -39,6 +39,7 @@ function createElement(manifestObj) {
         li.appendChild(span);
         li.addEventListener("click", () => {
             span.classList.toggle("show");
+            a.classList.toggle("selected");
         });
         manifestNode.appendChild(li);
     });
