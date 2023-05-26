@@ -34,13 +34,16 @@ function createElement(manifestObj) {
             a = document.createElement("a"),
             span = document.createElement("span"),
             img = document.createElement("img");
-        a.innerHTML = `${name}`;
+        let cleanName = name.replace(".dev", "");
+        cleanName = cleanName.replace(".js", "");
+        cleanName = cleanName.replace("-", " ");
+        a.innerHTML = `${cleanName}`;
         span.innerHTML = `${manifestObj[name]}`;
         li.appendChild(a);
         li.appendChild(span);
         li.appendChild(img);
         li.addEventListener("click", () => {
-            img.setAttribute("src", `./demo/${name}.gif`);
+            img.setAttribute("src", `./demo/${cleanName}.gif`);
             span.classList.toggle("show");
             img.classList.toggle("show");
             a.classList.toggle("selected");
