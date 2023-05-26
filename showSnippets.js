@@ -36,7 +36,7 @@ function createElement(manifestObj) {
             img = document.createElement("img");
         let cleanName = name.replace(".dev", "");
         cleanName = cleanName.replace(".js", "");
-        cleanName = cleanName.replace("-", " ");
+        cleanName = cleanName.replace(/-/g, " ");
         a.innerHTML = `${cleanName}`;
         span.innerHTML = `${manifestObj[name]}`;
         li.appendChild(a);
