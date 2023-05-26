@@ -47,7 +47,7 @@ function createElement(manifestObj) {
             span.classList.toggle("show");
             img.classList.toggle("show");
             a.classList.toggle("selected");
-            setTimeout(() => img.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }), 100);
+            setTimeout(() => img.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }), 500);
         });
         manifestNode.appendChild(li);
     });

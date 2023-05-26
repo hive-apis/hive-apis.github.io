@@ -1,4 +1,5 @@
 {
+    "AB-Changer.dev.js": "Set/Modify AB tests that do not exist in the AB portal",
     "AB-Share.js": "Creates a sharable url that will put users into the same active AB tests currently running on the page",
     "AB-Viewer.js": "Outputs all AB test states on current page",
     "Ad-Overlay.js": "Displays basic advertisement information below ad units",
