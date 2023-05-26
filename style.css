@@ -96,7 +96,7 @@ li:hover, nav a:hover {
     cursor: pointer;
 }
 
-li span {
+li span, li img {
     visibility: hidden;
     opacity: 0;
     transition: visibility ease-in 0.5s, visibility ease-out 0s, opacity 0.5s linear;
@@ -106,8 +106,20 @@ li span {
     font-size: 1em;
 }
 
+li img {
+    max-height: 90vh;
+}
+
 .show {
     visibility: visible;
     opacity: 1;
     height: auto;
+}
+
+/* media query for under 425px */
+@media only screen and (max-width: 425px) {
+    li img {
+        max-height: 300px;
+        max-width: 95%;
+    }
 }
