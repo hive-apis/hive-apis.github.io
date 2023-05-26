@@ -36,11 +36,11 @@ function createElement(manifestObj) {
             img = document.createElement("img");
         a.innerHTML = `${name}`;
         span.innerHTML = `${manifestObj[name]}`;
-        img.setAttribute("src", `./demo/${name}.gif`);
         li.appendChild(a);
         li.appendChild(span);
         li.appendChild(img);
         li.addEventListener("click", () => {
+            img.setAttribute("src", `./demo/${name}.gif`);
             span.classList.toggle("show");
             img.classList.toggle("show");
             a.classList.toggle("selected");
